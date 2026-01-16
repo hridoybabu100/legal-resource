@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+h1, h2, h3 {
+       font-family: "EB Garamond", serif;
+}
+.container {
+    width: 70%;
+    margin:  auto;
+}
+body {
+    background-color: #FFFFFF;
+}
+#nav-bar, #hero, #area , #say {
+    margin-bottom: 60px;
+}
+#nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.logo img {
+    width: 150px;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+ul li {
+    list-style: none;
+}
+ul li a {
+    color: #707070;
+    text-decoration: none;
+}
+.nav-btn button {
+    background-color: #B68C5A;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    transition: 1s;
+}
+.nav-btn button:hover {
+    background-color: beige;
+    color: black;
+    box-shadow: 3px 3px 1px grey;
+}
+
+/* hero section code hare  */
+#hero {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+   background-image: url(./legal-solution-resources/images/banner.png)
+    
+}
+.hero-contant {
+    text-align: center;
+    padding-top: 120px;
+
+}
+.hero-contant h1 {
+    color: #FFFFFF;
+    font-size: 72px;
+    line-height: 82px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.hero-contant p {
+    color: #E7E7E7;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+input {
+    width: 320px;
+    padding: 15px 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    
+}
+.hero-btn {
+    background-color: #B68C5A;
+    color: #FFFFFF;
+    padding: 12px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 17px;
+    border: none;
+    border-radius: 4px; 
+    transition: 1s;
+}
+.hero-btn:hover {
+    background-color: beige;
+    color: black;
+    /* box-shadow: 3px 3px 1px grey; */
+}
+
+/* legal area section code hare  */
+
+#area h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 20px  0;
+}
+#area p {
+    text-align: center;
+    color: #707070;
+    line-height: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.area-p {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.area-box {
+    padding: 40px;
+    width: 360px;
+    text-align: center;
+    border-bottom: 1px solid rgb(227, 210, 210);
+    border-right: 1px solid rgb(235, 209, 209);
+}
+.area-box *{
+    margin-bottom: 20px;
+}
+/* What Our Client Say section code hare  */
+
+#say h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 20px  0;
+}
+#say p {
+    text-align: center;
+    color: #707070;
+    line-height: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.banner {
+    text-align: center;
+    
+    height: 80vh;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(./legal-solution-resources/images/banner.png);
+}
+.banner img {
+    padding-top: 150px;
+}
+#say h1 {
+    color: #FFFFFF;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+#say p {
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+
+
+
+
+
+/* responsive desing  */
+@media screen and (min-width:578px) and     (max-width:992px){
+    .container {
+    width: 87%;
+    margin:  auto;
+}
+#nav-bar, ul {
+    flex-direction: column;
+}
+.hero-contant h1 {
+    font-size: 50px;
+ 
+}
+.area-p {
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+}
+.area-box {
+    width: 100%;
+}
+.banner img {
+    padding-top: 150px;
+    width: 70px;
+}
+#say p {
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 15px;
+    padding: 0 20px;
+}
+.banner {
+    text-align: center;
+    
+    height: 100vh;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(./legal-solution-resources/images/banner.png);
+}
+.arrow {
+    padding: 10px 20px;
+}
+#say h1 {
+    color: #FFFFFF;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin: 1px 0;
+}
+
+
+}
+@media screen and (max-width:577px){
+    .container {
+    width: 98%;
+    margin:  auto;
+}
+#nav-bar, ul {
+    flex-direction: column;
+}
+.nav-btn button {
+    margin-top: 20px;
+}
+.hero-contant h1 {
+    font-size: 40px;
+    line-height: 50px;
+ 
+}
+input {
+    width: 150px;
+    padding: 15px 5px; 
+}
+.hero-contant {
+    padding-top: 100px;
+
+}
+.hero-contant p {
+    font-size: 15px;
+    line-height: 20px;
+}
+.area-p {
+    grid-template-columns: repeat(1,1fr);
+    width: 100%;
+}
+.area-box {
+    width: 100%;
+}
+
+
+}
